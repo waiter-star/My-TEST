@@ -1,0 +1,13 @@
+1.)
+sudo tee /etc/yum.repos.d/vivaldi.repo << EOF
+[vivaldi]
+name=vivaldi
+baseurl=https://repo.vivaldi.com/archive/rpm/x86_64
+enabled=1
+gpgcheck=1
+gpgkey=https://repo.vivaldi.com/archive/linux_signing_key.pub
+EOF
+
+2.)
+sudo rpm-ostree install vivaldi-stable
+
